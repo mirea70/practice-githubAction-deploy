@@ -18,7 +18,7 @@ then
   echo "> 현재 구동중인 애플리케이션이 없으므로 종료하지 않습니다." >> /home/ec2-user/app/action/deploy.log
 else
   echo "> kill -15 $CURRENT_PID" >> /home/ec2-user/app/action/deploy.log
-  sudo kill -15 $CURRENT_PID
+  sudo kill -9 $CURRENT_PID
   sleep 5
 fi
 
